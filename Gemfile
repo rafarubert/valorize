@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.7.rc2'
 
 gem 'sqlite3'
+gem 'pg'
 
 gem 'refinerycms',              '= 0.9.9.18'
 
