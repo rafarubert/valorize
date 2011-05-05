@@ -1,0 +1,60 @@
+pt-BR:
+  shared:
+    admin:
+      image_picker:
+        image: imagem
+  plugins:
+    campaigns:
+      title: Campanhas
+  admin:
+    refinery_settings:
+      form:
+        help:
+          mailchimp_api_key: "Obtenha sua chave API no painel MailChimp escolhendo 'Conta' e depois 'API Keys & Info."
+          mailchimp_default_to_name: "Por padrão: Destinatários verá o nome(não o endereço de e-mail). Isso pode ser alterado em cada campanha."
+          mailchimp_default_from_name: "Por padrão de envio: Nome da camapanha (não o endereço de e-mail). Isso pode ser alterado em cada campanha."
+          mailchimp_default_from_email: "Por padrão de envio: email para a mensagem de sua camapnha. Isso pode ser alterado em cada campanha.."
+          mailchimp_admin_base_url: A URL da sua área de administrador da MailChimp. Isto é usado para gerar links para as suas campanhas. Só mudar se você sabe o que está fazendo.
+    campaigns:
+      index:
+        create_new: Criar nova camapnha
+        reorder: Salvar campanhas
+        reorder_done: Reordenar campanhas
+        sorry_no_results: Desculpe! Nenhum resultado encontrado.
+        no_items_yet: Nenhuma camapnha. Clique em "Criar nova campanha" para adicionar a sua primeira campanha.
+        set_api_key: Você deve definir uma chave válida para o MailChimp.
+        set_api_link: Clique aqui para atualizar sua chave.
+      campaign:
+        view_live: Ver esta camapanha ao vivo <br/><em>(abrir em nova janela)</em>
+        edit: Editar camapnha
+        delete: Apagar campanha
+        delete_confirmation: "Tem certeza que deseja apagar '%{subject}'?"
+        mailchimp_error: "Não foi possível salvar a MailChimp! Por favor, certifique-se de sua chave é vâlida e que você está usando o endereço de e-mail válido."
+        send_dialog: "Enviar agendamento, ou testar esta campanha"
+        send_test_success: E-mail de teste foi enviado para %{email}.
+        send_test_failure: E-mail de teste não pode ser enviador para %{email}. Verifique o endereço de e-mail
+        send_now_success: Campanha enviada com sucesso!
+        send_now_failure: Campanha não pode ser enviada. Verifique em seu Mailchimp o que pode estar errado.
+        schedule_success: Campanha agendada com sucesso.
+        schedule_failure: Campanah não pode ser agendada. Verifique em seu Mailchimp o que pode estar errado.
+        unschedule_success: Campanha desmarcada com sucesso.
+        unschedule_failure: Campanha não pode ser desmarcada. Verifique em seu Mailchimp o que pode estar errado.
+      form:
+        to_and_from: Para e De
+        settings: Confirurações
+        subject_help: Assunto, utilizado em campanha
+        mailchimp_list_id: Lista de e-mails
+        mailchimp_list_id_help: Lista para enviar esta campanha. São criadas em Mailchimp.
+        mailchimp_template_id: Template
+        mailchimp_template_id_help: O modelo de HTML para usar para nesta campanha. Estes são geridos em MailChimp.
+        to_name: De Nome
+        to_name_help: "Para: destinatário irá ver o nome(não o endereço de e-mail). Você pode alterar o padrão em Configurações."
+        from_name: Nome do formulário
+        from_name_help: "A partir de: nome para sua mensagem de campanha (não um endereço de e-mail). Você pode alterar o padrão em Configurações."
+        from_email: De Email
+        from_email_help: "De: O endereço de e-mail para a sua mensagem de campanha. Você pode alterar o padrão em Configurações."
+        auto_tweet: Auto Tweet
+        auto_tweet_help: Tweet automatico sobre esta campanha, quando enviado. Requer a criação de MailChimp Twitter.
+  campaigns:
+    show:
+      other: Outras campanhas

@@ -1,0 +1,13 @@
+<h4>/ Dicas de segurança</h4>
+<% @tips.each do |item| %>
+<div class="thumb_notice">
+	
+	<h5><%= title %></h5>
+	<p>
+		...
+  <%= link_to  "Leia mais ...", blog_post_url(blog_post) %>
+	</p>
+	<div class="clr">&nbsp;</div>
+</div>
+<% end %>
+<!--<a href="#" class="read_tips">LEIA MAIS DICAS</a> -->

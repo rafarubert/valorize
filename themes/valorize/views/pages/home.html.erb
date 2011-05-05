@@ -1,0 +1,45 @@
+<%#= render :partial => "/shared/content_page" %>
+<% content_for :index_info do %>
+<div id="index_info">
+	<% @tips.each do |item| %>
+	<div class="column">
+
+		<h3><%= title %></h3>
+		<p>
+			...
+		</p>
+	</div>
+	<% end %>
+
+</div>
+<% end -%>
+<div id="content">
+	<div class="column">
+		<%= render :partial => "pages/notices" -%>
+	</div>
+	<div class="column center">
+		<% if @random %>
+		<div class="content">
+			<h4>/ Previdencia</h4>
+
+			<img src="images/imagem-previdencia.jpg" title="" alt="" />
+			<h5><%= @random.title %></h5>
+			<p>
+				aaa
+				<%= link_to "Leia mais...", news_item_url(@random) %>
+			</p>
+		</div>
+		<% end -%>
+		<div class="doubt">
+			<h4>Tira duvidas</h4>	
+			<p>
+				<a href="/contato">
+				Entre em contato conosco. 
+				</a>
+			<p>
+		</div>
+	</div>
+	<div class="column">
+		<%= render :partial => "pages/tips" -%>
+	</div>
+	<div class="clr">&nbsp;</div>

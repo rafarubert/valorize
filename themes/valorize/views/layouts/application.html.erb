@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
+	  <%= render :partial => "/shared/head", :locals => {:theme => true} %>
+	
+		<meta name="generator" content="TextMate http://macromates.com/">
+		<meta name="author" content="Rafael Cruz Rubert">
+
+		<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen, projection" >		
+ 	</head>
+	<body>
+		<%= site_bar -%>
+    
+		<div id="general">
+			<div id="top">
+				<div id="menu">
+			    <%= render :partial => "/shared/header" -%>				
+				</div>
+				<h1><span>Valorize Seguros</span></h1>
+				<div id="highlights">
+					<div id="info">
+						<h2>Seguros Valorize</h2>
+						<p>
+							Confiança e credibilidade de quem cuida das famílias brasileiras.
+						</p>
+						<a href="#"><span>Faça uma simulação</span></a>
+					</div>
+				</div>
+				<div id="breadcrumb">
+					<p>
+						<%= yield(:breadcrumb) %>
+					</p>
+				</div>
+			</div>
+			<%= yield(:index_info) %>
+			<div id="content">
+				<%= yield %>
+				<div class="clr">&nbsp;</div>
+			</div>
+			<address id="footer">
+				<div class="content">
+					<div id="logo">
+						&nbsp;
+					</div>
+					<p id="text">
+						Rua Rodrugues Junior 1260, Centro 60.060-001, Fortaleza-CE
+						<br />(85) 3023 5638 - comercial@valorizeseguros.com.br
+					</p>		
+				</div>
+			</address>
+		</div>
+	</body>
+</html>

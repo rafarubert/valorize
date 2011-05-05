@@ -1,0 +1,12 @@
+<h4>/ Noticias e Destaques</h4>
+
+ <% @news_items.each do |item| %>
+	<h5><%= item.title %></h5>
+	<p>
+		...
+	</p>
+     <%= link_to "Leia mais...", news_item_url(item) %>
+
+ <% end %>
+
+<!--<a href="#" class="read_more">LEIA MAIS NOTICIAS</a> -->

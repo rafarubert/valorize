@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'DINNextLTProBold';
+    src: url('../fonts/dinnextltpro-bold-webfont.eot');
+    src: url('../fonts/dinnextltpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dinnextltpro-bold-webfont.woff') format('woff'),
+         url('../fonts/dinnextltpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/dinnextltpro-bold-webfont.svg#DINNextLTProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINNextLTProMedium';
+    src: url('../fonts/dinnextltpro-medium-webfont.eot');
+    src: url('../fonts/dinnextltpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dinnextltpro-medium-webfont.woff') format('woff'),
+         url('../fonts/dinnextltpro-medium-webfont.ttf') format('truetype'),
+         url('../fonts/dinnextltpro-medium-webfont.svg#DINNextLTProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINNextLTProRegular';
+    src: url('../fonts/dinnextltpro-regular-webfont.eot');
+    src: url('../fonts/dinnextltpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dinnextltpro-regular-webfont.woff') format('woff'),
+         url('../fonts/dinnextltpro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/dinnextltpro-regular-webfont.svg#DINNextLTProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT45LightRegular';
+    src: url('../fonts/helvetica_lt_45_light-webfont.eot');
+    src: url('../fonts/helvetica_lt_45_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica_lt_45_light-webfont.woff') format('woff'),
+         url('../fonts/helvetica_lt_45_light-webfont.ttf') format('truetype'),
+         url('helvetica_lt_45_light-webfont.svg#HelveticaNeueLT45LightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* { margin:0px; padding:0px; }
+body{font-family: Arial, Helvetica, sans-serif;font-size: 12px;margin: 0px;padding: 0px}
+#general{width: 1068px; margin: 0 auto;background:url("../../images/bg.jpg") repeat-x 0 442px}
+#general #top{}
+#general #top h1 {background:url("../../images/logo-valorize.jpg") no-repeat center top #fff;width:242px;height:174px;position:absolute;margin: 0 0 0 62px }
+#general #top h1 span {display:none;}
+#general #top #highlights{background:url("../../images/banner.jpg") no-repeat center top #fff;;height: 320px;}
+
+#general #top #highlights #info{float:right; width:270px;text-align:left;margin: 60px 80px 0 0;color: #fff;text-shadow: 1px 1px 0 #333;}
+#general #top #highlights #info h2{margin:10px 0 10px 0;font-size:32px;font-family: 'DINNextLTProBold';
+}
+#general #top #highlights #info p{font-size:16px;font-family: 'DINNextLTProMedium';
+}
+#general #top #highlights #info p{}
+#general #top #highlights #info a {background:url("../../images/orcamento.jpg") no-repeat center ;display:block;width:242px; height:76px; margin:50px auto;}
+#general #top #highlights #info a span{display:none;}
+
+#general #top #breadcrumb{background:url("../../images/breadcrumb.jpg") no-repeat center top #fff;height: 72px;margin: 0 0 0 0;}
+#general #top #breadcrumb p{font-size:26px;padding: 20px 0 0 60px;color:#999;font-family: 'HelveticaNeueLT45LightRegular';}
+
+#general  #index_info{background:url("../../images/boxes.jpg") no-repeat center top #fff;height: 170px;margin: -54px auto 0 auto;width:942px;color: #fff;font-size: 12px;}
+#general  #index_info .column{ width: 262px;float:left;margin: 6px;padding: 20px;}
+#general  #index_info .column h3{ font-size: 22px; margin:2px 0 18px 0;font-weight:normal;    font-family: 'HelveticaNeueLT45LightRegular';}
+#general  #index_info .column p {text-align:justify;padding: 0 60px 0 0}
+
+#general #content{width:940px; margin: 0 auto;min-height: 200px}
+#general #content .column{
+	float:left;
+	margin:40px 0 0 20px;
+	padding:0 10px 0 10px;
+	min-height:100px;
+	width:264px;
+	text-align:justify;
+	}
+	#general #content .column.center{
+		margin:40px 0 0 12px;
+		width:288px;
+	}
+	#general #content .column.center .content{
+		padding: 0 12px 10px 12px;
+		background: #f5f6f7;border: 2px solid #f3f3f3;
+		width:262px;
+	}
+	#general #content .column.center .content img  {border: 4px solid #dedfdf;}
+		#general #content .column.center  .content p  {background: none;}
+	#general #content .column.center .doubt {
+		background:url("../../images/doubt.jpg") no-repeat center top;
+		width:288px;height:130px;
+		margin:0;
+
+	}
+		
+			#general #content .column.center  .doubt h4  {background: none;padding:20px 10px 0 14px; margin: 20px 0 6px 0;}	
+		#general #content .column.center  .doubt p  {background: none;padding:2px 10px 0 14px;margin:0; width: 130px;text-align:left;}	
+	
+#general #content .column h4,#general #content #sidebar h4{margin: 20px 0 20px 0;color:#4c5b63; font-size: 20px;    font-family: 'HelveticaNeueLT45LightRegular';}    
+#general #content .column h5, #general #content #sidebar h5{margin: 12px 0 10px 0;color: #016887;font-size: 18px;}    
+#general #content .column p, #general #content #sidebar p {color:#999;font-size:12px;background:url("../../images/separador-noticias.jpg") no-repeat center bottom; padding:0 0 2px 0; }    
+#general #content .column p a, #general #content #sidebar p a{color:#5d8c92; text-decoration: underline;font-size: 14px; display: block;margin: 16px 0 16px 0}
+#general #content .column a.read_more, #general #content #sidebar a.read_more {background:url("../../images/botao-noticias.jpg") no-repeat center top #fff; display:block;width:120px; height: 21px;text-decoration:none;font-size:10px;color:#fff;text-align:center;padding:4px 0 0 0;margin: 12px auto;}
+#general #content .column a.read_tips {background:url("../../images/botao-dicas.jpg") no-repeat center top #fff; display:block;width:105px; height: 24px;text-decoration:none;font-size:10px;color:#fff;text-align:center;padding:4px 0 0 0;margin: 12px auto;}
+#general #content .column .thumb_notice{background:url("../../images/separador-noticias.jpg") no-repeat center bottom; margin: 10px 0 10px 0;}
+#general #content .column .thumb_notice img{float: left; border: 2px solid #ccc;margin: 12px;}
+#general #content .column .thumb_notice  h5 {float: left;margin: 12px 0 4px 0;}
+#general #content .column .thumb_notice p {float:left; width: 170px;background:none;margin: 0 0 0 0; }
+#general #content .column .thumb_notice p a{margin:10px 0 10px 0; }
+
+
+#general #content #textarea{float:left;margin:20px 0 20px 20px;min-height:100px;width:600px; border-right: 1px solid #eee;color:#999;padding: 0 40px 20px 0;}
+#general #content #textarea h4{margin: 20px 0 20px 0;color:#016887; font-size: 20px;}
+#general #content #textarea img{float:left;
+margin:0 20px 10px 0;}
+#general #content #textarea p{float:left;}
+#general #content #sidebar{float:left;margin:20px 0 0 20px;min-height:100px;width:240px;padding: 0 0 0 18px;}
+#general #footer{background:url("../../images/rodape.jpg") no-repeat center top #fff;height:145px;width:1068px;}
+#general #footer .content{
+	width: 500px;
+	margin: 0 auto;
+}
+#general #footer #logo{background:url("../../images/footer-logo.jpg") no-repeat center top;height:52px;width:127px;float:left;margin: 18px 0 0 0; }
+
+#general #footer #text{float:left; ;margin: 30px 0 0 20px; color:#999;font-size:12px}
+
+.clr { clear: both; }
+
+/* MENU */
+
+/* menu::base */
+
+div#menu {
+	margin: 10px 0 0 0;
+    font-family: 'DINNextLTProRegular';   
+font-size:16px;
+		height: 56px;
+    padding-left: 10px;
+    
+}
+div#menu ul {
+    margin: 10;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+div#menu ul.menu {
+
+}
+div#menu li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 0;
+    display: block;
+    float: left;
+    z-index: 9;
+    width: auto;
+}
+div#menu ul ul li {
+    z-index: 9;
+}
+/*backgorund conteudo sub menu*/
+div#menu li div {
+    list-style: none;
+    float: left;
+    position: absolute;
+    z-index: 11;
+    top: 36px;
+    left: 0;
+    visibility: hidden;
+    width: 180px;
+    padding: 0px 0 11px 7px;
+background: url("../../images/submenu-bottom.png") no-repeat 7px bottom;
+    margin: 0px 0 0 -4px;
+}
+div#menu li div ul {
+background: url("../../images/submenu-bottom.png") no-repeat  top;  
+margin: -6px 0 0 0;
+}
+div#menu li:hover>div {
+    visibility: visible;
+}
+div#menu a {
+    position: relative;
+    z-index: 10;
+    height: 41px;
+    display: block;
+    float: left;
+    line-height: 41px;
+    text-decoration: none;
+    margin-top: 1px;
+    white-space: nowrap;
+    width: auto;
+    padding-right: 5px;
+    text-align: center;
+}
+div#menu span {
+    display: block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 95% 0;
+    text-align: center;
+}
+
+/* menu::level1 */
+div#menu a{
+    padding: 0 30px 0 0;
+    line-height: 40px;
+    height: 46px;
+    margin-right: 5px;
+    _margin-right: 1px;
+    background: none;
+
+}
+
+div#menu span {
+    margin-top: 2px;
+    padding-left: 30px;
+color: #5F7783;
+    background: none;
+		
+}
+/*menu base centro*/
+div#menu ul.menu>li { 
+
+}
+/*menu base direito*/
+div#menu li.current a,
+div#menu ul.menu>li:hover>a {
+    background: url("../../images/lavalamp-right.png") no-repeat right;
+
+}
+
+/*menu base equerdo*/
+div#menu li.current a span,
+div#menu ul.menu>li:hover>a span,div#menu ul.menu>li:visited>a span {
+    background: url("../../images/lavalamp-left.png") no-repeat 0 -2px;
+}
+div#menu li.current a.parent span,
+div#menu ul.menu>li:hover>a.parent span,div#menu ul.menu>li:visited>a span {
+    background: url("../../images/lavalamp_h-left.png") no-repeat 0 -2px;
+}
+
+
+div#menu ul.menu>li:hover>a span,div#menu ul.menu>li:visited>a span {
+    color: #fff;
+}
+div#menu li {  }
+div#menu li.last { background: none; }
+
+
+div#menu a.over span {
+    color: #fff;
+}
+
+/* menu::level2 */
+div#menu ul ul li {
+    background: none;
+    padding: 0;
+}
+div#menu ul ul {
+    padding-top: 10px;
+}
+div#menu ul ul a {
+    padding: 0;
+    height: auto;
+    float: none;
+    display: block;
+    line-height: 26px;
+    font-size: 11px;
+    color: #fff;
+    z-index: -1;
+    padding-left: 5px;
+
+    width: 160px;
+    margin: 0 5px;
+    text-transform: none;
+}
+    
+div#menu ul ul a span {
+    padding: 0 15px;
+    line-height: 26px;
+    font-size: 11px;
+}
+div#menu li.current ul a,
+div#menu li.current ul a span {
+    background:none;
+}
+div#menu ul ul a:hover {
+/*passando mouse*/
+}
+div#menu ul ul a:hover span {
+	/*passando mouse span*/
+}
+div#menu ul ul a.parent {
+		/*camaradas que tem filho, link*/
+    background: url("../../images/submenu-pointer-bottom.gif") no-repeat 5px bottom;
+}
+div#menu ul ul a.parent span {
+		/*span dos camaradas que tem filhos */
+    background: url("../../images/submenu-pointer-top.png") no-repeat 0 0;
+}
+div#menu ul ul a.parent:hover {
+		/*os camaradas que tem filho passando mouse*/
+    background: url("../../images/submenu-pointer-selected-bottom.png") no-repeat 5px bottom;
+}
+div#menu ul ul a.parent:hover span {
+		/*span dos camaradas que tem filho passando mouse*/
+    background: url("../../images/submenu-selected-top.png") no-repeat 0 0;
+}
+div#menu ul ul span {
+    margin-top: 0;
+    text-align: left;
+}
+div#menu ul ul li.last { background: none; }
+div#menu ul ul li {
+    width: 100%;
+}
+
+/* menu::level3 */
+div#menu ul ul div {
+
+    width: 180px;
+    padding: 15px 0px 8px 0px;
+    margin: -44px 0 0 169px !important;
+    background: url("../../images/subsubmenu-top.png") no-repeat 0px 0;
+}
+*+html div#menu ul ul div { height:10px }
+*+html div#menu.ie7 ul ul div { height:auto }
+div#menu ul ul ul {
+    padding: 0 4px 5px 1px;
+    background: url("../../images/submenu-bottom.png") no-repeat 0px bottom;
+}
+div#menu ul ul div li {
+    position:relative;
+    top:-5px;
+}
