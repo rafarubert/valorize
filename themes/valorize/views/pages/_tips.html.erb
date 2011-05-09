@@ -1,11 +1,11 @@
 <h4>/ Dicas de segurança</h4>
 <% @tips.each do |item| %>
 <div class="thumb_notice">
-	
-	<h5><%= title %></h5>
+	<%= raw /<img[^>]+>/.match(item.body).to_s %>
+	<h5><%= item.title %></h5>
 	<p>
-		...
-  <%= link_to  "Leia mais ...", blog_post_url(blog_post) %>
+		  <%= raw truncate(strip_tags(item.body), :length => 40) %>
+			<%= link_to  "Leia mais ...", blog_post_url(item) %>
 	</p>
 	<div class="clr">&nbsp;</div>
 </div>

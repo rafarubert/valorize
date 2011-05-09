@@ -3,9 +3,10 @@
  <% @news_items.each do |item| %>
 	<h5><%= item.title %></h5>
 	<p>
-		...
+		  <%= raw truncate(strip_tags(item.body), :length => 120) %>
+			<%= link_to "Leia mais...", news_item_url(item) %>
 	</p>
-     <%= link_to "Leia mais...", news_item_url(item) %>
+     
 
  <% end %>
 

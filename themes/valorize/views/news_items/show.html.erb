@@ -1,0 +1,20 @@
+<% content_for :breadcrumb do %>
+	/ <%= @news_item.title.humanize %>
+<% end %>
+<%# content_for :body_content_title, @news_item.title %>
+
+<%# content_for :body_content_left do %>
+<div id="textarea">
+	<h4><%= @news_item.title.humanize %></h4>
+  <%= @news_item.body.html_safe %>
+</div>
+<div id="sidebar">
+	
+</div>
+
+
+<%#= link_to t('.back_to_index'), news_items_url %>
+<%# end %>
+<%# content_for :body_content_right, render(:partial => 'recent_posts') %>
+
+<%#= render :partial => "/shared/content_page" %>

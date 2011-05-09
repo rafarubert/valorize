@@ -1,12 +1,11 @@
 <%#= render :partial => "/shared/content_page" %>
 <% content_for :index_info do %>
 <div id="index_info">
-	<% @tips.each do |item| %>
+	<% @index_infos.each do |item| %>
 	<div class="column">
-
-		<h3><%= title %></h3>
+		<h3><%= item.title %></h3>
 		<p>
-			...
+			  <%= raw truncate(strip_tags(item.body), :length => 220, :omission => link_to( '...', blog_post_url(item))) %>
 		</p>
 	</div>
 	<% end %>
@@ -20,18 +19,19 @@
 	<div class="column center">
 		<% if @random %>
 		<div class="content">
-			<h4>/ Previdencia</h4>
+			<h4>/ Seguros</h4>
+			<%= raw /<img[^>]+>/.match(@random.body).to_s %>
 
-			<img src="images/imagem-previdencia.jpg" title="" alt="" />
 			<h5><%= @random.title %></h5>
 			<p>
-				aaa
-				<%= link_to "Leia mais...", news_item_url(@random) %>
+			  <%= raw truncate(strip_tags(@random.body), :length => 120) %>
+
+				<%= link_to "Leia mais...", blog_post_url(@random) %>
 			</p>
 		</div>
 		<% end -%>
 		<div class="doubt">
-			<h4>Tira duvidas</h4>	
+			<h4>Tira dúvidas</h4>	
 			<p>
 				<a href="/contato">
 				Entre em contato conosco. 

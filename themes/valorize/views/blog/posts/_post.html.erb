@@ -1,0 +1,22 @@
+<% content_for :breadcrumb do %>
+	/ <%= @blog_post.title.humanize %>
+<% end %>
+<% flash.each do |key, value| %>
+ <div id='flash' class="flash flash_<%= key %>">
+   <%= value %>
+ </div>
+<% end %>
+
+    <h4><%= @blog_post.title.humanize %></h4>
+
+  <%= @blog_post.body.html_safe %>
+
+  <%# if BlogPost::ShareThis.enabled? %>
+    
+		<!--<span class="st_sharethis" displayText="ShareThis"></span> -->
+  <%# end %>
+
+<%#= render :partial => '/shared/draft_page_message' unless @blog_post.nil? or @blog_post.live? -%>
+<%# if next_or_previous?(@blog_post) -%>
+  <%#= render 'nav' %>
+<%# end -%>

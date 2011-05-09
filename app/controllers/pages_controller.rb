@@ -5,7 +5,7 @@ class PagesController < ApplicationController
     @news_items = NewsItem.latest.translated
     @index_infos = BlogCategory.find_by_title("destaques").posts.limit(3)
     @tips = BlogCategory.find_by_title("dicas").posts.limit(5)
-    @random = BlogCategory.find_by_title("random").posts.last
+    @random = BlogCategory.find_by_title("seguros").posts.last
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
   end
 
