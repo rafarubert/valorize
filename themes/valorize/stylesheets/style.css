@@ -53,9 +53,9 @@ body{font-family: Arial, Helvetica, sans-serif;font-size: 12px;margin: 0px;paddi
 #general #top h1 span {display:none;}
 #general #top #highlights{background:url("../../images/banner.jpg") no-repeat center top #fff;;height: 320px;}
 
-#general #top #highlights #info{float:right; width:270px;text-align:left;margin: 60px 80px 0 0;color: #fff;text-shadow: 1px 1px 0 #333;}
+#general #top #highlights #info{float:right;height:240px; width:270px;text-align:left;margin: 60px 80px 0 0;color: #fff;text-shadow: 1px 1px 0 #333}
 #general #top #highlights #info h2{margin:10px 0 10px 0;font-size:32px;font-family: 'DINNextLTProBold';
-}
+white-space: nowrap;}
 #general #top #highlights #info p{font-size:16px;font-family: 'DINNextLTProMedium';
 }
 #general #top #highlights #info p{}
