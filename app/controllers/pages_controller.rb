@@ -2,10 +2,11 @@ class PagesController < ApplicationController
 
   # This action is usually accessed with the root path, normally '/'
   def home
-    @news_items = NewsItem.latest.translated
+    @news_items = NewsItem.published.translated.limit(3)
     @index_infos = BlogCategory.find_by_title("destaques").posts.limit(3)
     @tips = BlogCategory.find_by_title("dicas").posts.limit(5)
-    @random = BlogCategory.find_by_title("seguros").posts.last
+    @random = BlogCategory.find_by_title("seguros").posts
+    @random = @random[rand(@random.count)]
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
   end
 

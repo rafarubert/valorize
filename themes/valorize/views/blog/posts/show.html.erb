@@ -59,7 +59,7 @@
 <% if Refinery.version < '0.9.9' %>
   <% content_for :head_libraries, jquery_include_tags(:jquery_ui => false) %>
   <% content_for :head do %>
-    <%= stylesheet_link_tag 'refinerycms-blog' %>
+    <%#= stylesheet_link_tag 'refinerycms-blog' %>
     <%# enable AJAX'd post nav at your own risk until html5 history API implemented. %>
     <%#= javascript_include_tag('refinerycms-blog') %>
     <% if BlogPost::ShareThis.enabled? %>
@@ -68,7 +68,7 @@
     <% end %>
   <% end %>
 <% else %>
-  <% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
+  <%# content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
   <% content_for :before_javascript_libraries, jquery_include_tags(:jquery_ui => false) %>
   <% content_for :javascripts do %>
     <%# enable AJAX'd post nav at your own risk until html5 history API implemented. %>
