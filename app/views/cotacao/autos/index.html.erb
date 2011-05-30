@@ -1,0 +1,33 @@
+
+<% content_for :title do %>
+Valorize Seguros - Cotação - Autos
+<% end %>
+<% content_for :breadcrumb do %>
+/ Cotação / Autos
+<% end %>
+
+
+
+<div id="textarea">
+	<div class='inquiries'>
+		<%= form_for @orcamento ,:url => {:action => "create"} do |f| %>
+		<%= render :partial => "/shared/admin/error_messages",
+		:locals => {
+			:object => @orcamento,
+			:include_object_name => true
+			} %>
+			<% [:nome , :nascimento , :fone_residencial , :fone_celular , :fone_comercial , :cpf , :rg , :endereco , :cep , :apolice_renovacao , :apolice_seguradora , :apolice_numero , :apolice_ci , :veiculo_modelo , :veiculo_ano , :veiculo_combustivel , :veiculo_zero , :veiculo_data_nota , :veiculo_proprietario , :veiculo_parentesco, :veiculo_placa , :veiculo_chassi, :veiculo_renavam, :veiculo_alarme , :veiculo_ar,:veiculo_vidro,:veiculo_air, :veiculo_abs, :veiculo_trava, :veiculo_aro,:veiculo_gas,:veiculo_direcao, :condutor_nome, :condutor_nascimento,:condutor_sexo, :condutor_estadocivil, :condutor_cpf, :condutor_relacao].each do |campo| %>
+			<div class='field'>
+				<%= eval("f.required_label :#{campo}") %>
+				<%= eval("f.text_field :#{campo}") %>
+			</div>
+			<%end %>
+			<div class='actions'>
+				<%= f.submit %>
+			</div>
+			<% end %>
+	</div>
+	<div id="sidebar">
+
+	</div>
+</div>

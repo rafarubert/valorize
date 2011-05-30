@@ -1,0 +1,2 @@
+module Cotacao::AutoHelper
+end

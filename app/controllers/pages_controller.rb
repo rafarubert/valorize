@@ -9,6 +9,10 @@ class PagesController < ApplicationController
     @random = @random[rand(@random.count)]
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
   end
+  
+  def tips
+    @tips = BlogCategory.find_by_title("dicas").posts
+  end
 
   # This action can be accessed normally, or as nested pages.
   # Assuming a page named "mission" that is a child of "about",

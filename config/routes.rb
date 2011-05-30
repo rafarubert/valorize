@@ -1,4 +1,10 @@
 Site::Application.routes.draw do
+
+  devise_for :people
+  namespace :cotacao do
+    resources :autos
+  end
+  match '/tips' => 'pages#tips', :as => :tips
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,22 @@
+<% content_for :breadcrumb do %>
+	/ Dicas de segurança
+<% end %>
+<% content_for :body_content_title, "Dicas de segurança" %>
+
+
+<div id="textarea">
+	<% @tips.each do |tip|%>
+	<div>
+
+		<h3><%= link_to tip.title, blog_post_url(tip) %></h3>
+
+    <%=raw truncate  strip_tags(tip.body), :length => 200,
+                  :omission => " ... #{link_to 'Leia mais', blog_post_url(tip)}",
+                  :preserve_html_tags => true %>
+	</div>
+      
+  <% end %>
+</div>
+<div id="sidebar">
+	
+</div>

@@ -19,7 +19,7 @@ doc/app
 # Public Uploads
 public/system/*
 public/themes/*
-
+public/email/*
 # Public Cache
 public/javascripts/cache
 public/stylesheets/cache
@@ -78,3 +78,5 @@ capybara-*html
 .rvmrc
 .rvmrc.*
 
+public/email
+public/email/*
